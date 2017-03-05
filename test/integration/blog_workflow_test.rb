@@ -27,14 +27,14 @@ class BlogWorkflowTest < Capybara::Rails::TestCase
     assert_current_path edit_post_path(posts(:first))
     
     fill_in 'Title', with: "Titulo"
-    click_on 'Post'
+    click_on 'Update Post'
     visit root_path
     assert page.has_content?("Titulo")
   end
   
   test "when delete a post it should desapear from root" do
     visit post_path posts(:first)
-    click_button 'Delete'
+    click_link 'Delete'
     assert_current_path posts_path
     
     assert !page.has_content?(posts(:first).title)

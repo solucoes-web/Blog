@@ -16,5 +16,5 @@
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
-<%= button_to 'Delete', @post, :method => :delete %> |
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Delete', @post, method: :delete, data: { confirm: 'Are you sure?' } %> |
+<%= link_to 'Back', root_path %>

@@ -85,6 +85,8 @@ GEM
       capybara (~> 2.2)
       minitest (~> 5.0)
       rake
+    minitest-color (0.0.2)
+      minitest (~> 5)
     minitest-metadata (0.6.0)
       minitest (>= 4.7, < 6.0)
     minitest-rails (2.2.1)
@@ -175,6 +177,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  minitest-color
   minitest-rails-capybara
   pg
   rails (= 4.2.5)
